@@ -13,10 +13,10 @@ document.getElementById('cat__tax').addEventListener('click', () => {
     const id = document.getElementById('cat__tax').getAttribute('data-id');
     payment.id = id;
 
-    let header = document.getElementById('center__header');
+    const header = document.getElementById('center__header');
     header.innerHTML = 'Налоги';
 
-    let subtitle = document.getElementById('center__subtitle');
+    const subtitle = document.getElementById('center__subtitle');
     subtitle.innerHTML = 'Оплата налоговых сборов';
 });
 
@@ -31,10 +31,10 @@ document.getElementById('cat__cold-water').addEventListener('click', () => {
     const id = document.getElementById('cat__cold-water').getAttribute('data-id');
     payment.id = id;
 
-    let header = document.getElementById('center__header');
+    const header = document.getElementById('center__header');
     header.innerHTML = 'Холодная вода';
 
-    let subtitle = document.getElementById('center__subtitle');
+    const subtitle = document.getElementById('center__subtitle');
     subtitle.innerHTML = 'Оплата холодного водоснабжения';
 });
 
@@ -49,10 +49,10 @@ document.getElementById('cat__internet').addEventListener('click', () => {
     const id = document.getElementById('cat__internet').getAttribute('data-id');
     payment.id = id;
 
-    let header = document.getElementById('center__header');
+    const header = document.getElementById('center__header');
     header.innerHTML = 'Интернет';
 
-    let subtitle = document.getElementById('center__subtitle');
+    const subtitle = document.getElementById('center__subtitle');
     subtitle.innerHTML = 'Оплата услуг интернет-провайдера';
 });
 
@@ -67,10 +67,10 @@ document.getElementById('cat__security').addEventListener('click', () => {
     const id = document.getElementById('cat__security').getAttribute('data-id');
     payment.id = id;
 
-    let header = document.getElementById('center__header');
+    const header = document.getElementById('center__header');
     header.innerHTML = 'Охрана';
 
-    let subtitle = document.getElementById('center__subtitle');
+    const subtitle = document.getElementById('center__subtitle');
     subtitle.innerHTML = 'Оплата услуг безопасности';
 });
 
@@ -85,10 +85,10 @@ document.getElementById('cat__exchange').addEventListener('click', () => {
     const id = document.getElementById('cat__exchange').getAttribute('data-id');
     payment.id = id;
 
-    let header = document.getElementById('center__header');
+    const header = document.getElementById('center__header');
     header.innerHTML = 'Обмен валют';
 
-    let subtitle = document.getElementById('center__subtitle');
+    const subtitle = document.getElementById('center__subtitle');
     subtitle.innerHTML = 'Покупка и продажа валюты';
 });
 
