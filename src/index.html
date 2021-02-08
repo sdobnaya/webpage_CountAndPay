@@ -69,27 +69,12 @@
               </div>
             </div>
           </div>
-          <div class="form__summary">
+          <div id ="form__summary-id" class="form__summary">
             <p class="form__summary-title">К оплате</p>
-            <ul class="form__summary-list">
-              <li class="list__item">
-                <p><span class="list__item-label">ДС 949321</span>
-                  <span class="price">$ <b>621</b></span>
-                </p>
-              </li>
-              <li class="list__item">
-                <p><span class="list__item-label">КА 522010</span>
-                  <span class="price">$ <b>902</b></span>
-                </p>
-              </li>
-              <li class="list__item">
-                <p><span class="list__item-label">ЛК 309123</span>
-                  <span class="price">$ <b>173</b></span>
-                </p>
-              </li>
+            <ul id ="summary-list__id" class="form__summary-list">
               <li class="list__item list__total">
                 <p><span class="list__item-label">Всего</span>
-                  <span class="price">$ <b>1 696</b></span>
+                  <span id ="intotal-span__id" class="price">$ </span>
                 </p>
               </li>
             </ul>
@@ -104,35 +89,35 @@
       </div>
       <div class="right">
         <h2 class="right__title">Сохранённые платежи</h2>
-        <form class="right__payments">
+        <form id="right__payments-id" class="right__payments">
           <div class="right__payments-fields">
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" checked/>
+                <input id="checkbox-taxes" type="checkbox" />
                 <span>Налоги</span>
               </label>
             </p>
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" />
+                <input id="checkbox-water" type="checkbox" />
                 <span>Холодная вода</span>
               </label>
             </p>
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" />
+                <input id="checkbox-internet" type="checkbox" />
                 <span>Интернет</span>
               </label>
             </p>
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" checked/>
+                <input id="checkbox-security" type="checkbox" />
                 <span>Охрана</span>
               </label>
             </p>
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" />
+                <input id="checkbox-exchange" type="checkbox" />
                 <span>Обмен валют</span>
               </label>
             </p>
@@ -143,9 +128,7 @@
         </form>
         <div class="right__transactions">
           <p class="transactions__title">Транзакции</p>
-          <ul class="transactions__list">
-            <li class="list__item">Налоги: успешно оплачено</li>
-            <li class="list__item list__item-error">Охрана: ошибка транзакции</li>
+          <ul id="transactions__list-id" class="transactions__list">
           </ul>
         </div>
       </div>
