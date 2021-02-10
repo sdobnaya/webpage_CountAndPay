@@ -13,30 +13,30 @@
         <h1 class="left__title">
           Доступные платежи
         </h1>
-        <div class="left__company" data-id="taxes">
+        <div id="cat__tax" class="left__company" data-id="taxes">
           <img src="img/taxes.svg" class="taxes" data-id="taxes" />
-          <p class="left__company-desc" data-id="taxes">Налоги</p>
+          <p id="name__tax" class="left__company-desc" data-id="taxes">Налоги</p>
         </div>
-        <div class="left__company selected" data-id="water">
+        <div id="cat__cold-water" class="left__company selected" data-id="water">
           <img src="img/water.svg" class="taxes" data-id="water" />
-          <p class="left__company-desc" data-id="water">Холодная вода</p>
+          <p id="name__cold-water" class="left__company-desc" data-id="water">Холодная вода</p>
         </div>
-        <div class="left__company" data-id="internet">
+        <div id="cat__internet" class="left__company" data-id="internet">
           <img src="img/internet.svg" class="taxes" data-id="internet"/>
-          <p class="left__company-desc" data-id="internet">Интернет</p>
+          <p id="name__internet" class="left__company-desc" data-id="internet">Интернет</p>
         </div>
-        <div class="left__company" data-id="security">
+        <div id="cat__security" class="left__company" data-id="security">
           <img src="img/security.svg" class="taxes" data-id="security" />
-          <p class="left__company-desc" data-id="security" >Охрана</p>
+          <p id="name__security" class="left__company-desc" data-id="security" >Охрана</p>
         </div>
-        <div class="left__company" data-id="exchange">
+        <div id="cat__exchange" class="left__company" data-id="exchange">
           <img src="img/exchange.svg" class="taxes" data-id="exchange" />
-          <p class="left__company-desc" data-id="exchange" >Обмен валют</p>
+          <p id="name__exchange" class="left__company-desc" data-id="exchange" >Обмен валют</p>
         </div>
       </div>
       <div class="center">
-        <h2 class="center__title">Холодная вода</h2>
-        <p class="center__desc">Оплата холодного водоснабжения</p>
+        <h2 id="center__header" class="center__title">Холодная вода</h2>
+        <p id="center__subtitle" class="center__desc">Оплата холодного водоснабжения</p>
         <p class="center__select-meters">
           <label for="meters">
             <span>Выберите счётчик</span>
@@ -50,7 +50,7 @@
             </select>
           </label>
         </p>
-        <form class="center__form">
+        <form id="id__center__form" class="center__form">
           <div class="form__data">
             <div class="data__wrapper">
               <div class="data__item data__previous">
@@ -69,27 +69,12 @@
               </div>
             </div>
           </div>
-          <div class="form__summary">
+          <div id ="form__summary-id" class="form__summary">
             <p class="form__summary-title">К оплате</p>
-            <ul class="form__summary-list">
-              <li class="list__item">
-                <p><span class="list__item-label">ДС 949321</span>
-                  <span class="price">$ <b>621</b></span>
-                </p>
-              </li>
-              <li class="list__item">
-                <p><span class="list__item-label">КА 522010</span>
-                  <span class="price">$ <b>902</b></span>
-                </p>
-              </li>
-              <li class="list__item">
-                <p><span class="list__item-label">ЛК 309123</span>
-                  <span class="price">$ <b>173</b></span>
-                </p>
-              </li>
+            <ul id ="summary-list__id" class="form__summary-list">
               <li class="list__item list__total">
                 <p><span class="list__item-label">Всего</span>
-                  <span class="price">$ <b>1 696</b></span>
+                  <span id ="intotal-span__id" class="price">$ </span>
                 </p>
               </li>
             </ul>
@@ -104,35 +89,35 @@
       </div>
       <div class="right">
         <h2 class="right__title">Сохранённые платежи</h2>
-        <form class="right__payments">
+        <form id="right__payments-id" class="right__payments">
           <div class="right__payments-fields">
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" checked/>
+                <input id="checkbox-taxes" type="checkbox" />
                 <span>Налоги</span>
               </label>
             </p>
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" />
+                <input id="checkbox-water" type="checkbox" />
                 <span>Холодная вода</span>
               </label>
             </p>
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" />
+                <input id="checkbox-internet" type="checkbox" />
                 <span>Интернет</span>
               </label>
             </p>
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" checked/>
+                <input id="checkbox-security" type="checkbox" />
                 <span>Охрана</span>
               </label>
             </p>
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" />
+                <input id="checkbox-exchange" type="checkbox" />
                 <span>Обмен валют</span>
               </label>
             </p>
@@ -143,9 +128,7 @@
         </form>
         <div class="right__transactions">
           <p class="transactions__title">Транзакции</p>
-          <ul class="transactions__list">
-            <li class="list__item">Налоги: успешно оплачено</li>
-            <li class="list__item list__item-error">Охрана: ошибка транзакции</li>
+          <ul id="transactions__list-id" class="transactions__list">
           </ul>
         </div>
       </div>
