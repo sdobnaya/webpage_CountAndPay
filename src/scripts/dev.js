@@ -1,3 +1,4 @@
+
 // Привет, это один из первых моих проектов - и он невероятно уродлив. 
 // Я не стала серьезно его переделывать, ведь только сравнивая новые работы 
 // с предыдущими можно оценить свой прогресс. Сейчас я могу лучше :)
@@ -13,6 +14,7 @@ let thePayment = { id: "water", meterId: "DS949321", meterIdValue: "ДС 949321"
 let allPayments = [];
 let serviceObject = { i:iGlobal, inTotal: inTotal };
 
+
 document.getElementById('cat__tax').addEventListener('click', () => {
     document.getElementById('cat__tax').classList.add('selected');
     document.getElementById('cat__cold-water').classList.remove('selected');
@@ -22,7 +24,9 @@ document.getElementById('cat__tax').addEventListener('click', () => {
 
     const id = document.getElementById('cat__tax').getAttribute('data-id');
 
+
     thePayment.id = id;
+
 
     const header = document.getElementById('center__header');
     header.innerHTML = 'Налоги';
@@ -41,6 +45,7 @@ document.getElementById('cat__cold-water').addEventListener('click', () => {
     const id = document.getElementById('cat__cold-water').getAttribute('data-id');
 
     thePayment.id = id;
+
 
     const header = document.getElementById('center__header');
     header.innerHTML = 'Холодная вода';
@@ -103,6 +108,7 @@ document.getElementById('cat__exchange').addEventListener('click', () => {
     subtitle.innerHTML = 'Покупка и продажа валюты';
 });
 
+
 //Работа с селектом
 document.getElementById('meters').addEventListener('change', ({target}) => {
     thePayment.meterId = target.value;
@@ -120,6 +126,7 @@ anewBPrice.innerHTML = '0';
 document.getElementById('intotal-span__id').appendChild(anewBPrice);
 
 // Сабмит формы
+
 document.getElementById('id__center__form').addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -163,9 +170,11 @@ document.getElementById('id__center__form').addEventListener('submit', (event) =
         }
     }
 
+
     //Добавляем объект платежа в общий массив
     const paymentClone = Object.assign(
         {},
+
         thePayment
     );
     allPayments.push(paymentClone);
@@ -184,6 +193,7 @@ document.getElementById('id__center__form').addEventListener('submit', (event) =
         document.getElementById('checkbox-security').setAttribute("checked", "true");
     }
     if (thePayment.id === 'exchange'){
+
         document.getElementById('checkbox-exchange').setAttribute("checked", "true");
     }
 
@@ -197,9 +207,11 @@ document.getElementById('id__center__form').addEventListener('submit', (event) =
     document.getElementById("current").value = "";
 
     //Создаем динамический вывод К оплате
+
     for (iGlobal; iGlobal < allPayments.length; iGlobal++) {
         let localmeterIdValue = allPayments[iGlobal].meterIdValue;
         let localPrice = allPayments[iGlobal].price;
+
 
         let newLi = document.createElement("li");
         newLi.setAttribute("class", "list__item list__item-hide");
@@ -234,6 +246,8 @@ document.getElementById('id__center__form').addEventListener('submit', (event) =
             });
     
             anewBPrice.innerHTML = `${serviceObject.inTotalOutcome}`;
+
+
         }
     };
 });
@@ -250,6 +264,7 @@ document.getElementById('id__center__form').addEventListener('reset', () => {
     });
 
     //Отчистили payments
+
     allPayments.length = 0;
 
     //Отчистили служебный объект
@@ -266,6 +281,7 @@ document.getElementById('id__center__form').addEventListener('reset', () => {
     document.getElementById('checkbox-exchange').removeAttribute("checked");
     
 });
+
 
 //Вывод сохраненных платежей и формирование локального хранилища
 document.getElementById('right__payments-id').addEventListener('submit', (event) => {
@@ -288,6 +304,8 @@ document.getElementById('right__payments-id').addEventListener('submit', (event)
         count++;
 
         if (newBalance > 0) {
+
+
             newLiItem.innerHTML = 'Налоги: успешно оплачено';
             newLiItem.setAttribute("class", "list__item ");
         } else {
@@ -313,6 +331,7 @@ document.getElementById('right__payments-id').addEventListener('submit', (event)
         count++;
 
         if (newBalance > 0) {
+
             newLiItem.innerHTML = 'Вода: успешно оплачено';
             newLiItem.setAttribute("class", "list__item ");
         } else {
@@ -338,6 +357,7 @@ document.getElementById('right__payments-id').addEventListener('submit', (event)
         count++;
 
         if (newBalance > 0) {
+
             newLiItem.innerHTML = 'Интернет: успешно оплачено';
             newLiItem.setAttribute("class", "list__item ");
         } else {
@@ -363,6 +383,8 @@ document.getElementById('right__payments-id').addEventListener('submit', (event)
         count++;
 
         if (newBalance > 0) {
+
+ 
             newLiItem.innerHTML = 'Охрана: успешно оплачено';
             newLiItem.setAttribute("class", "list__item ");
         } else {
@@ -388,6 +410,7 @@ document.getElementById('right__payments-id').addEventListener('submit', (event)
         count++;
 
         if (newBalance > 0) {
+
             newLiItem.innerHTML = 'Обмен валют: успешно оплачено';
             newLiItem.setAttribute("class", "list__item ");
         } else {
