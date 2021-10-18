@@ -1,6 +1,3 @@
-# Lectrum JS personal prject
-
-
 ### Installation
 
 ```
