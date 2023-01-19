@@ -6,7 +6,7 @@ To run this on your PC you need to do the following:
 
 1.  Clone the repo:
 
-        git clone https://github.com/sdobnaya/webpage_CountAndPay.git
+        git clone https://github.com/sdobnaya/webpage_countAndPay.git
 
 2.  Install dependencies using:
 
