@@ -1,29 +1,26 @@
-### Installation
+# Responsive webpage with a bit of logic (JS/SCSS/HTML)
 
-```
-npm install
-```
+Payment counter - accepts the parameters, calculates the amount according to the coefficient and makes the payment if there are enough funds in the account.
 
-### Start Dev Server
+To run this on your PC you need to do the following:
 
-```
-npm start
-```
+1.  Clone the repo:
 
-### Build Prod Version
+        git clone https://github.com/sdobnaya/webpage_CountAndPay.git
 
-```
-npm run build
-```
+2.  Install dependencies using:
 
-### Features:
+       ```
+        npm install
+       ```
 
-* ES6 Support via [babel](https://babeljs.io/) (v7)
-* SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
-* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
+3.  Run webpack:
 
-
-
-### Биллинговая система
+       ```
+        npm start
+       ```
+       
+### Result
 
 ![payments](./png/payments.png)
+
